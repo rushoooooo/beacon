@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.beacon</groupId>
+	<artifactId>egde-computing</artifactId>
+	<version>0.1</version>
+	<packaging>pom</packaging>
+	<name>edge-computing-module</name>
+	<dependencies>
+        
+	</dependencies>
+	<properties>
+		<source.version>1.8</source.version>
+		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+	</properties>
+	<modules>
+		<module>common</module>
+		<module>adapter</module>
+	</modules>
+	<build>
+		<finalName>dispatcher</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<outputDirectory>
+						${basedir}/private-jar
+					</outputDirectory>
+					<excludes>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
