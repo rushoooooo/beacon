@@ -15,7 +15,7 @@ fi
 
 FOUND="`docker ps -a | grep -o ${CONTAINER}`"
 if [[ "x$FOUND" = "x" ]]; then
-	docker run --name gateway_nginx -d -p 80:80  -v /usr/share/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /var/log/nginx:/var/log/nginx -v /usr/share/nginx/html:/usr/share/nginx/html nginx
+	docker run --name $CONTAINER -d -p 80:80  -v /usr/share/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /var/log/nginx:/var/log/nginx -v /usr/share/nginx/html:/usr/share/nginx/html nginx
 else
 	docker start $CONTAINER
 fi
