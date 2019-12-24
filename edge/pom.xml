@@ -18,10 +18,22 @@
 	<modules>
 		<module>common</module>
 		<module>adapter</module>
+		<module>coap-adapter</module>
+		<module>rest-adapter</module>
+		<module>socket-adapter</module>
+		<module>mqtt-adapter</module>
 	</modules>
 	<build>
 		<finalName>dispatcher</finalName>
 		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${source.version}</source>
+					<target>${source.version}</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>

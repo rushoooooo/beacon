@@ -7,7 +7,7 @@
 		<artifactId>egde-computing</artifactId>
 		<version>0.1</version>
 	</parent>
-	<artifactId>edge-adapter</artifactId>
+	<artifactId>edge-common</artifactId>
 	<packaging>jar</packaging>
 	<name>edge-computing-module</name>
 	<dependencies>
@@ -16,7 +16,7 @@
 	<properties>
 	</properties>
 	<build>
-		<finalName>edge-adapter</finalName>
+		<finalName>edge-common</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
