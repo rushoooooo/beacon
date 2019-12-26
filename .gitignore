@@ -27,3 +27,4 @@ hs_err_pid*
 /edge/adapter/.settings
 /edge/.project
 .settings
+.project

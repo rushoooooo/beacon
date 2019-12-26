@@ -2,18 +2,18 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.beacon</groupId>
+	<parent>
+		<groupId>com.beacon</groupId>
+		<artifactId>beacon-iot</artifactId>
+		<version>0.1</version>
+	</parent>
 	<artifactId>egde-computing</artifactId>
-	<version>0.1</version>
 	<packaging>pom</packaging>
 	<name>edge-computing-module</name>
 	<dependencies>
         
 	</dependencies>
 	<properties>
-		<source.version>1.8</source.version>
-		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 	</properties>
 	<modules>
 		<module>common</module>
@@ -26,14 +26,6 @@
 	<build>
 		<finalName>dispatcher</finalName>
 		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>${source.version}</source>
-					<target>${source.version}</target>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
