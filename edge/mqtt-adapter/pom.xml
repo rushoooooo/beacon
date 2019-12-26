@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.beacon</groupId>
+		<artifactId>egde-computing</artifactId>
+		<version>0.1</version>
+	</parent>
+	<artifactId>mqtt-adapter</artifactId>
+	<packaging>jar</packaging>
+	<name>edge-computing-module</name>
+	<dependencies>
+	</dependencies>
+	<properties>
+	</properties>
+	<build>
+		<finalName>mqtt-adapter</finalName>
+	</build>
+</project>

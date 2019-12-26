@@ -18,9 +18,9 @@
 	<modules>
 		<module>common</module>
 		<module>adapter</module>
-		<module>coap-adapter</module>
-		<module>rest-adapter</module>
-		<module>socket-adapter</module>
+		<!--<module>coap-adapter</module>-->
+		<!--<module>rest-adapter</module>-->
+		<!--<module>socket-adapter</module>-->
 		<module>mqtt-adapter</module>
 	</modules>
 	<build>
